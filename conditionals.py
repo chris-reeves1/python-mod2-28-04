@@ -75,3 +75,46 @@
 # print out value. 
 # error handling: unit input (loops/upper/lower)
 # optional: error handling for non-numeric input in weight.  
+
+
+#BaseException 
+
+#Exception(BaseException)
+
+#ZeroDivisionError(Exception)
+
+#try:
+#    result = 10/0
+#except ZeroDivisionError: # consumes the error
+#    print("Division by zero is not allowed")
+#except Exception as e:
+#    print(f"[ERROR] - an error occured - {str(e)}")
+#except: # Same as Baaseexception
+#    pass
+#finally:
+#    print("Clean up actions")
+#    db.close()
+
+# solution:
+#import sys
+
+#while True:
+#    try:
+ #       weight = float(input("enter a weight: "))
+#        break
+#    except ValueError:
+#        print("invalid input - must be numerical!!")
+ #       sys.exit()
+
+#while True:
+#    unit = input("Enter K (kgs) or L (lbs): ").upper()
+ #   if unit == "K":
+ #       converted = weight / 0.45
+ #       print(f"weight in lbs is {converted}")
+  #      break
+   # elif unit == "L":
+   #     converted = weight * 0.45
+   #     print(f"weight in kgs is {converted}")
+   #     break
+   # else:
+   #     print("invalid choice!! K or L please")
