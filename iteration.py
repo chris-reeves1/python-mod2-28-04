@@ -106,3 +106,20 @@
 # list comp
 # list comp one line only
 
+# inner list
+#[input("enter a name: ") for x in range(5)]
+
+# outer list
+#[print(f"{name} is cool") for name in iterable]
+
+# combined:
+# x = [print(f"{name} is cool") for name in [input("enter a name: ") for x in range(5)]]
+
+# print(x)
+
+# y = print("hello")
+# print(y)
+# # side effect:
+# def print(*args, **kwrags):
+#     # send to std.out
+#     return None
