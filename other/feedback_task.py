@@ -32,7 +32,7 @@ Recommendations on further learning
 Continue to practice and explore good pipeline design and integrate docker and 
 monitoring into your projects. 
 
-Feedback will be given on Bud - (written by me manually!) Im lookign for good and 
+Feedback will be given on Bud - (written by me manually!) Im looking for good and 
 extensible design, with comments/doc strings explaining decisions. 
-Deadline: EOW
+Deadline: end of module - must be emailed (in body of email not attatchment).
 spend 1 - 2 hours max! 
