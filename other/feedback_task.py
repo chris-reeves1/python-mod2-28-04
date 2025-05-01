@@ -29,8 +29,10 @@ Learner Punctuality and engagement
 Lyudmil was always punctual throughout the module and engaged well. 
 
 Recommendations on further learning
-Continue to practice and explore good pipeline design and integrate docker and monitoring into your projects. 
+Continue to practice and explore good pipeline design and integrate docker and 
+monitoring into your projects. 
 
-Feedback will be given on Bud - (written by me manually!!!!)
+Feedback will be given on Bud - (written by me manually!) Im lookign for good and 
+extensible design, with comments/doc strings explaining decisions. 
 Deadline: EOW
 spend 1 - 2 hours max! 
