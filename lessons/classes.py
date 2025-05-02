@@ -176,3 +176,29 @@ class Cat(Animal):
 my_cat = Cat("w", "y", "z")
 
 print(my_cat)
+
+
+
+# TODO:
+
+# optional:
+
+# class lab
+
+#1. Create a Rectangle class with attributes length and width. 
+#Add methods to calculate the area and perimeter of the rectangle
+
+
+#2. Create a BankAccount class with attributes account_number and balance. 
+# Add methods to deposit and withdraw money from the account.
+
+#3. Create a Car class with attributes make, model, and year. 
+#Add methods to get and set the values of the attributes.
+
+#4. Create a Product class with attributes name, price, and quantity. 
+#Add methods to calculate the total value of the product (price * quantity) 
+#and add or remove items from the product inventory. 
+
+# RPS app into a class based design. 
+
+# library system. 
