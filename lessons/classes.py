@@ -151,35 +151,35 @@
 
 # inheritance
 
-class Animal:
-    def __init__(self, name, species):
-        self.name = name
-        self.species = species
+# class Animal:
+#     def __init__(self, name, species):
+#         self.name = name
+#         self.species = species
 
-    def eat(self):
-        print(f"{self.name} is eating")
+#     def eat(self):
+#         print(f"{self.name} is eating")
 
-    def __str__(self):
-        return f"{self.name} - {self.species} - {self.__class__.__name__}"
+#     def __str__(self):
+#         return f"{self.name} - {self.species} - {self.__class__.__name__}"
 
-class Cat(Animal):
-    def __init__(self, name, species, breed):
-        super().__init__(name, species)
-        self.breed = breed
+# class Cat(Animal):
+#     def __init__(self, name, species, breed):
+#         super().__init__(name, species)
+#         self.breed = breed
     
-    def meow(self):
-        print("meow")
+#     def meow(self):
+#         print("meow")
 
-    def __str__(self):
-        return super().__str__() + f" - {self.breed}"
+#     def __str__(self):
+#         return super().__str__() + f" - {self.breed}"
     
-my_cat = Cat("w", "y", "z")
+# my_cat = Cat("w", "y", "z")
 
-print(my_cat)
+# print(my_cat)
 
 
 
-# TODO:
+#:
 
 # optional:
 
@@ -202,3 +202,30 @@ print(my_cat)
 # RPS app into a class based design. 
 
 # library system. 
+
+def create_model(name, fields):
+    def __init__(self, **kwargs):
+        for field_name, default_value in fields.items():
+            setattr(self, field_name, kwargs.get(field_name, default_value))
+
+    def __repr__(self):
+        field_strings = [f"{k}={getattr(self, k)!r}" for k in fields]
+        return f"{name}({', '.join(field_strings)})"
+
+    return type(name, (object,), {
+        "__init__": __init__,
+        "__repr__": __repr__,
+    })
+
+
+user_schema = {
+    "name": "",
+    "email": "",
+    "is_admin": False,
+}
+
+User = create_model("User", user_schema)
+
+
+user1 = User(name="chris", email="chris@chris.com", is_admin=True)
+print(user1)
